@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Tapestry&family=Titan+One&display=swap');
+
+
+.tab-bar {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid #ccc;
+	background-color: #f1f1f1;
+	width: 15%;
+}
+
+.dash {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 4px 8px;
+	font-family: "Titan One", cursive;
+	cursor: pointer;
+	padding: 10px;
+}
+
+.bar-img {
+	border: #000 2px solid;
+}
+
+.tab-bar div {
+	transition: 0.3s;
+}
+
+.tab-bar div:hover {
+	background-color: #ddd;
+}
+
+.tab-bar div.active {
+	background-color: #ccc;
+	border-left: none;
+}
+
+
+
+
+.main {
+	border-radius: 15px;
+}
+
+.left-bar {
+	width: calc(100% - 200px);
+	border: #000 2px solid;
+	border-radius: 40px 0px 40px 40px;
+}
+
+.main-menu {
+	color: #000;
+	text-align: center;
+	font-size: xx-large;
+	padding: 15px;
+}
+
+#main-menu {
+	display: block;
+}
+
+#main-logs {
+	display: none;
+}
+
+#main-gallery {
+	display: none;
+}
+
+.header {
+	transition-duration: 1s;
+}
+
+.header:hover {
+	letter-spacing: 10px;
+}
+
+#lore {
+	display: flex;
+	justify-content: space-around;
+	padding: 10px 40px;
+	font-family: "Tapestry", cursive;
+	font-size: larger;
+	font-weight: 600;
+	align-items: center;
+	gap: 5px;
+}
+
+
+
+.fade-in {
+	transform: scale(0.94);
+	animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+
+@keyframes scale {
+	100% {
+		transform: scale(1);
+	}
+}
+
+.fade-in > span {
+	display: inline-block;
+	opacity: 0;
+	filter: blur(4px);
+}
+
+.fade-in > span:nth-child(1) {
+	animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+.fade-in > span:nth-child(2) {
+	animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+.fade-in > span:nth-child(3) {
+	animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+.fade-in > span:nth-child(4) {
+	animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+.fade-in > span:nth-child(5) {
+	animation: fade-in 0.8s 1.0s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+.fade-in > span:nth-child(6) {
+	animation: fade-in 0.8s 1.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+.fade-in > span:nth-child(7) {
+	animation: fade-in 0.8s 1.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+.fade-in > span:nth-child(8) {
+	animation: fade-in 0.8s 1.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+.fade-in > span:nth-child(9) {
+	animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+.fade-in > span:nth-child(10) {
+	animation: fade-in 0.8s 2.0s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+.fade-in > span:nth-child(11) {
+	animation: fade-in 0.8s 2.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+.fade-in > span:nth-child(12) {
+	animation: fade-in 0.8s 2.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+.fade-in > span:nth-child(13) {
+	animation: fade-in 0.8s 2.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+.fade-in > span:nth-child(14) {
+	animation: fade-in 0.8s 2.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes fade-in {
+	100% {
+		opacity: 1;
+		filter: blur(0);
+	}
+}
+
+#move-buttons {
+	display: flex;
+	gap: 40px;
+	padding: 30px 40px;
+}
+
+.move {
+	padding: 20px;
+	border: teal 6px double;
+	border-radius: 10px;
+	cursor: pointer;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+	transition: box-shadow 0.3s ease-in-out;
+}
+
+.move:hover {
+	box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.scores {
+	font-size: large;
+	padding: 0px 20px;
+}
+
+#score-box {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+#cards {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 20px;
+	gap: 20px;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+	font-family: "Tapestry", cursive;
+	font-size: xx-large;	
+}
+
+.logs {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.logs > h2 {
+	font-family: "Tapestry", cursive;
+	color: blue;
+}
