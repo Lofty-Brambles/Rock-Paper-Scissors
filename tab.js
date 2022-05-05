@@ -5,9 +5,9 @@ function openTab( event, tabName ) {
 		dash[ i ].className = dash[ i ].className.replace( " active", "" );
 	}
 	
-	const tabId = document.querySelectorAll( "[id^=main]" );
-	for ( let i = 0; i < tabId.length; i++ ) {
-		tabId[ i ].style.display = "none";
+	const tabContent = document.getElementsByClassName( "tabcontent" );
+	for ( let i = 0; i < tabContent.length; i++ ) {
+		tabContent[ i ].style.display = "none";
 	}
 
 	document.getElementById( tabName ).style.display = "block";
@@ -15,3 +15,5 @@ function openTab( event, tabName ) {
 	event.currentTarget.className += " active";
 
 };
+
+document.getElementById( "default" ).click();
