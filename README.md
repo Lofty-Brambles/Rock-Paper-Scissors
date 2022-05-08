@@ -1,6 +1,6 @@
 # Rock Paper Scissors
-A rps to be ran on Browser console (till I add GUI maby)
+A rps that can be played on-screen!
 ### To-Do
-- [ ] Add Browser Console Elements
-- [ ] Add GUI
-- [ ] Add Other stuff?
+- [x] Add Browser Console Elements
+- [x] Add GUI
+- [x] Add Other stuff?
